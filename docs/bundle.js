@@ -72,34 +72,107 @@
 	    _inherits(App, _React$Component);
 	
 	    function App() {
+	        var _ref;
+	
+	        var _temp, _this, _ret;
+	
 	        _classCallCheck(this, App);
 	
-	        return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+	        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	            args[_key] = arguments[_key];
+	        }
+	
+	        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = App.__proto__ || Object.getPrototypeOf(App)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+	            counter: 0
+	        }, _temp), _possibleConstructorReturn(_this, _ret);
 	    }
 	
 	    _createClass(App, [{
 	        key: 'render',
 	        value: function render() {
+	            var _this2 = this;
+	
 	            return _react2.default.createElement(
-	                _src2.default,
+	                'div',
 	                {
-	                    className: 'btn btn-default',
-	                    href: 'https://github.com/trendmicro-frontend/react-anchor'
-	                },
-	                _react2.default.createElement('i', {
-	                    className: 'fa fa-github fa-fw fa-2x',
 	                    style: {
-	                        verticalAlign: 'middle'
+	                        margin: '0 auto',
+	                        width: 360
 	                    }
-	                }),
+	                },
 	                _react2.default.createElement(
-	                    'span',
-	                    {
-	                        style: {
-	                            verticalAlign: 'middle'
-	                        }
-	                    },
-	                    'GitHub'
+	                    'div',
+	                    { className: 'row' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-sm-6' },
+	                        _react2.default.createElement(
+	                            'h4',
+	                            null,
+	                            'Counter: ',
+	                            this.state.counter
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-sm-6 text-right' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'btn-group' },
+	                            _react2.default.createElement(
+	                                _src2.default,
+	                                {
+	                                    className: 'btn btn-default',
+	                                    componentClass: 'button',
+	                                    onClick: function onClick() {
+	                                        _this2.setState({
+	                                            counter: _this2.state.counter + 1
+	                                        });
+	                                    }
+	                                },
+	                                _react2.default.createElement('i', { className: 'fa fa-plus fa-fw' })
+	                            ),
+	                            _react2.default.createElement(
+	                                _src2.default,
+	                                {
+	                                    className: 'btn btn-default',
+	                                    componentClass: 'button',
+	                                    onClick: function onClick() {
+	                                        if (_this2.state.counter <= 0) {
+	                                            return;
+	                                        }
+	                                        _this2.setState({
+	                                            counter: _this2.state.counter - 1
+	                                        });
+	                                    }
+	                                },
+	                                _react2.default.createElement('i', { className: 'fa fa-minus fa-fw' })
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col-sm-12' },
+	                        _react2.default.createElement(
+	                            _src2.default,
+	                            { className: 'btn btn-default btn-block' },
+	                            _react2.default.createElement('i', {
+	                                className: 'fa fa-th-large fa-fw fa-2x',
+	                                style: {
+	                                    verticalAlign: 'middle'
+	                                }
+	                            }),
+	                            _react2.default.createElement(
+	                                'span',
+	                                {
+	                                    style: {
+	                                        verticalAlign: 'middle'
+	                                    }
+	                                },
+	                                'Block Button'
+	                            )
+	                        )
+	                    )
 	                )
 	            );
 	        }

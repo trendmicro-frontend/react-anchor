@@ -1,0 +1,20 @@
+{
+  "name": "@trendmicro/react-anchor",
+  "version": "0.5.0",
+  "description": "Trend Micro Components: React Anchor",
+  "authors": [
+    {
+      "name": "Cheton Wu",
+      "email": "cheton_wu@trend.com.tw",
+      "homepage": "https://github.com/cheton"
+    }
+  ],
+  "homepage": "https://github.com/trendmicro-frontend/react-anchor",
+  "snapshots": [],
+  "keywords": [
+    "react",
+    "react-component",
+    "anchor"
+  ],
+  "license": "MIT"
+}

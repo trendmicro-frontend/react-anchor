@@ -6,14 +6,16 @@ Demo: https://trendmicro-frontend.github.io/react-anchor
 
 ## Installation
 
-```
-npm install --save react@latest
-npm install --save @trendmicro/react-anchor
-```
+1. Install the latest version of [react](https://github.com/facebook/react) and [react-anchor](https://github.com/trendmicro-frontend/react-anchor):
 
-```js
-import Anchor from '@trendmicro/react-anchor';
-```
+  ```
+  npm install --save react @trendmicro/react-anchor
+  ```
+
+2. Import [react-anchor](https://github.com/trendmicro-frontend/react-anchor) with <b>@trendmicro</b> scope:
+  ```js
+  import Anchor from '@trendmicro/react-anchor';
+  ```
 
 ## Usage
 
@@ -26,6 +28,60 @@ import Anchor from '@trendmicro/react-anchor';
     GitHub
 </Anchor>
 ```
+
+
+## API
+
+### Properties
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th style="width: 100px;">Name</th>
+      <th style="width: 50px;">Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>href</td>
+      <td>String</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>onClick</td>
+      <td>Function(event)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>disabled</td>
+      <td>Boolean</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>role</td>
+      <td>String</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tabIndex</td>
+      <td>Number|String</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>componentClass</td>
+      <td>Element</td>
+      <td>'a'</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ## License
 

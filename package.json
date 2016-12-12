@@ -4,7 +4,6 @@
   "description": "Trend Micro Components: React Anchor",
   "main": "lib/index.js",
   "files": [
-    "dist",
     "lib"
   ],
   "scripts": {
@@ -12,7 +11,7 @@
     "bowersync": "./scripts/bowersync",
     "build": "babel --out-dir ./lib ./src",
     "build-examples": "cd examples; webpack; cp -af index.html ../docs/index.html",
-    "clean": "rm -f {lib,dist}/*",
+    "clean": "rm -f lib/*",
     "demo": "http-server -p 8000 docs/",
     "lint": "eslint ./src",
     "lint:fix": "eslint --fix ./src",

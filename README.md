@@ -6,14 +6,16 @@ Demo: https://trendmicro-frontend.github.io/react-anchor
 
 ## Installation
 
-```
-npm install --save react@latest
-npm install --save @trendmicro/react-anchor
-```
+1. Install the latest version of [react](https://github.com/facebook/react) and [react-anchor](https://github.com/trendmicro-frontend/react-anchor):
 
-```js
-import Anchor from '@trendmicro/react-anchor';
-```
+  ```
+  npm install --save react @trendmicro/react-anchor
+  ```
+
+2. Import [react-anchor](https://github.com/trendmicro-frontend/react-anchor) with <b>@trendmicro</b> scope:
+  ```js
+  import Anchor from '@trendmicro/react-anchor';
+  ```
 
 ## Usage
 

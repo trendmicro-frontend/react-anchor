@@ -27,6 +27,60 @@ import Anchor from '@trendmicro/react-anchor';
 </Anchor>
 ```
 
+
+## API
+
+### Properties
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th style="width: 100px;">Name</th>
+      <th style="width: 50px;">Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>href</td>
+      <td>String</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>onClick</td>
+      <td>Function(event)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>disabled</td>
+      <td>Boolean</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>role</td>
+      <td>String</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tabIndex</td>
+      <td>Number|String</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>componentClass</td>
+      <td>Element</td>
+      <td>'a'</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 ## License
 
 MIT

@@ -2,6 +2,8 @@
 
 [![NPM](https://nodei.co/npm/@trendmicro/react-anchor.png?downloads=true&stars=true)](https://nodei.co/npm/@trendmicro/react-anchor/)
 
+React Anchor component. It handles <b>stopPropagation()</b> and <b>preventDefault()</b> when disabling an anchor tag.
+
 Demo: https://trendmicro-frontend.github.io/react-anchor
 
 ## Installation

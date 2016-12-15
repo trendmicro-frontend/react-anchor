@@ -3,11 +3,7 @@
   "version": "0.5.1",
   "description": "Trend Micro Components: React Anchor",
   "authors": [
-    {
-      "name": "Cheton Wu",
-      "email": "cheton_wu@trend.com.tw",
-      "homepage": "https://github.com/cheton"
-    }
+    "Cheton Wu <cheton_wu@trend.com.tw>"
   ],
   "homepage": "https://github.com/trendmicro-frontend/react-anchor",
   "snapshots": [],

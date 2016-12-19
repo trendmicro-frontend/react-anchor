@@ -10,7 +10,11 @@ Object.keys(bower).forEach((key) => {
     bower[key] = pkg[key] || bower[key];
 });
 bower.authors = pkg.contributors.map(author => {
-    return author.name + " <" + author.email + ">";
+    return {
+        name: author.name,
+        email: author.email,
+        homepage: author.url
+    };
 });
 
 fs.writeFileSync(path.join(__dirname, '../bower.json'), JSON.stringify(bower, null, 2), 'utf8');

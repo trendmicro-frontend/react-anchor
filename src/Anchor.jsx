@@ -16,7 +16,10 @@ class Anchor extends Component {
             PropTypes.number,
             PropTypes.string
         ]),
-        componentClass: PropTypes.element
+        componentClass: PropTypes.oneOfType([
+            PropTypes.node,
+            PropTypes.string
+        ])
     };
 
     actions = {
@@ -42,15 +45,15 @@ class Anchor extends Component {
         return shallowCompare(this, nextProps, nextState);
     }
     render() {
-        let { href, role, tabIndex, disabled, style, ...props } = this.props;
-        const Component = this.props.componentClass || 'a';
+        let { href, role, tabIndex, componentClass, style, ...props } = this.props;
+        const Component = componentClass || 'a';
 
         if (isTrivialHref(href)) {
             role = role || 'button';
             href = href || '';
         }
 
-        if (disabled) {
+        if (this.props.disabled) {
             tabIndex = -1;
             style = {
                 pointerEvents: 'none',

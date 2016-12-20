@@ -78,7 +78,7 @@ Demo: https://trendmicro-frontend.github.io/react-anchor
     </tr>
     <tr>
       <td>componentClass</td>
-      <td>Element</td>
+      <td>Node|String</td>
       <td>'a'</td>
       <td></td>
     </tr>

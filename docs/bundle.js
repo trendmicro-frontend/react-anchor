@@ -21692,18 +21692,18 @@
 	                href = _props.href,
 	                role = _props.role,
 	                tabIndex = _props.tabIndex,
-	                disabled = _props.disabled,
+	                componentClass = _props.componentClass,
 	                style = _props.style,
-	                props = _objectWithoutProperties(_props, ['href', 'role', 'tabIndex', 'disabled', 'style']);
+	                props = _objectWithoutProperties(_props, ['href', 'role', 'tabIndex', 'componentClass', 'style']);
 	
-	            var Component = this.props.componentClass || 'a';
+	            var Component = componentClass || 'a';
 	
 	            if (isTrivialHref(href)) {
 	                role = role || 'button';
 	                href = href || '';
 	            }
 	
-	            if (disabled) {
+	            if (this.props.disabled) {
 	                tabIndex = -1;
 	                style = _extends({
 	                    pointerEvents: 'none'
@@ -21728,7 +21728,7 @@
 	    disabled: _react.PropTypes.bool,
 	    role: _react.PropTypes.string,
 	    tabIndex: _react.PropTypes.oneOfType([_react.PropTypes.number, _react.PropTypes.string]),
-	    componentClass: _react.PropTypes.element
+	    componentClass: _react.PropTypes.oneOfType([_react.PropTypes.node, _react.PropTypes.string])
 	}, _temp2);
 	exports.default = Anchor;
 
@@ -21769,4 +21769,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=bundle.js.map
+//# sourceMappingURL=bundle.js.map?06ea1aac784d20ea9536

@@ -1,6 +1,11 @@
+import 'trendmicro-ui/dist/css/trendmicro-ui.css';
+import '@trendmicro/react-buttons/dist/react-buttons.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Nav from './Nav';
+import Section from './Section';
 import Anchor from '../src';
+import styles from './index.styl';
 
 class App extends React.Component {
     state = {
@@ -8,69 +13,63 @@ class App extends React.Component {
     };
 
     render() {
+        const name = 'React Anchor';
+        const url = 'https://github.com/trendmicro-frontend/react-anchor';
+
         return (
-            <div
-                style={{
-                    margin: '0 auto',
-                    width: 360
-                }}
-            >
-                <div className="row">
-                    <div className="col-sm-6">
-                        <h4>Counter: {this.state.counter}</h4>
-                    </div>
-                    <div className="col-sm-6 text-right">
-                        <div className="btn-group">
-                            <Anchor
-                                className="btn btn-default"
-                                componentClass="button"
-                                onClick={() => {
-                                    this.setState({
-                                        counter: this.state.counter + 1
-                                    });
-                                }}
-                            >
-                                <i className="fa fa-plus fa-fw" />
-                            </Anchor>
-                            <Anchor
-                                className="btn btn-default"
-                                componentClass="button"
-                                onClick={() => {
-                                    if (this.state.counter <= 0) {
-                                        return;
-                                    }
-                                    this.setState({
-                                        counter: this.state.counter - 1
-                                    });
-                                }}
-                            >
-                                <i className="fa fa-minus fa-fw" />
-                            </Anchor>
+            <div>
+                <Nav name={name} url={url} />
+                <div className={styles.container}>
+                    <div className="container-fluid">
+                        <div className="row">
+                            <div className="col-md-6">
+                                <Section className="row-md-4">
+                                    <h4>Counter: {this.state.counter}</h4>
+                                    <Anchor
+                                        componentClass="button"
+                                        style={{
+                                            backgroundColor: '#fff',
+                                            backgroundImage: 'none',
+                                            border: '1px solid #ccc',
+                                            padding: '6px 12px'
+                                        }}
+                                        onClick={() => {
+                                            this.setState({
+                                                counter: this.state.counter + 1
+                                            });
+                                        }}
+                                    >
+                                        <i className="fa fa-plus fa-fw" />
+                                    </Anchor>
+                                    &nbsp;
+                                    <Anchor
+                                        componentClass="button"
+                                        style={{
+                                            backgroundColor: '#fff',
+                                            backgroundImage: 'none',
+                                            border: '1px solid #ccc',
+                                            padding: '6px 12px'
+                                        }}
+                                        onClick={() => {
+                                            if (this.state.counter <= 0) {
+                                                return;
+                                            }
+                                            this.setState({
+                                                counter: this.state.counter - 1
+                                            });
+                                        }}
+                                    >
+                                        <i className="fa fa-minus fa-fw" />
+                                    </Anchor>
+                                </Section>
+                            </div>
                         </div>
-                    </div>
-                    <div className="col-sm-12">
-                        <Anchor className="btn btn-default btn-block">
-                            <i
-                                className="fa fa-th-large fa-fw fa-2x"
-                                style={{
-                                    verticalAlign: 'middle'
-                                }}
-                            />
-                            <span
-                                style={{
-                                    verticalAlign: 'middle'
-                                }}
-                            >
-                                Block Button
-                            </span>
-                        </Anchor>
                     </div>
                 </div>
             </div>
         );
     }
 }
-
 
 ReactDOM.render(
     <App />,

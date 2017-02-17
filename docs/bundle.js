@@ -24006,46 +24006,53 @@ var App = function (_React$Component) {
                                 { className: 'col-md-6' },
                                 _react2.default.createElement(
                                     _Section2.default,
-                                    { className: 'row-md-6' },
+                                    { className: 'row-md-4' },
                                     _react2.default.createElement(
                                         'h4',
                                         null,
                                         'Counter: ',
                                         this.state.counter
-                                    )
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'col-md-6 text-right' },
-                                _react2.default.createElement(
-                                    _src2.default,
-                                    {
-                                        className: 'btn btn-default',
-                                        componentClass: 'button',
-                                        onClick: function onClick() {
-                                            _this2.setState({
-                                                counter: _this2.state.counter + 1
-                                            });
-                                        }
-                                    },
-                                    _react2.default.createElement('i', { className: 'fa fa-plus fa-fw' })
-                                ),
-                                _react2.default.createElement(
-                                    _src2.default,
-                                    {
-                                        className: 'btn btn-default',
-                                        componentClass: 'button',
-                                        onClick: function onClick() {
-                                            if (_this2.state.counter <= 0) {
-                                                return;
+                                    ),
+                                    _react2.default.createElement(
+                                        _src2.default,
+                                        {
+                                            componentClass: 'button',
+                                            style: {
+                                                backgroundColor: '#fff',
+                                                backgroundImage: 'none',
+                                                border: '1px solid #ccc',
+                                                padding: '6px 12px'
+                                            },
+                                            onClick: function onClick() {
+                                                _this2.setState({
+                                                    counter: _this2.state.counter + 1
+                                                });
                                             }
-                                            _this2.setState({
-                                                counter: _this2.state.counter - 1
-                                            });
-                                        }
-                                    },
-                                    _react2.default.createElement('i', { className: 'fa fa-minus fa-fw' })
+                                        },
+                                        _react2.default.createElement('i', { className: 'fa fa-plus fa-fw' })
+                                    ),
+                                    '\xA0',
+                                    _react2.default.createElement(
+                                        _src2.default,
+                                        {
+                                            componentClass: 'button',
+                                            style: {
+                                                backgroundColor: '#fff',
+                                                backgroundImage: 'none',
+                                                border: '1px solid #ccc',
+                                                padding: '6px 12px'
+                                            },
+                                            onClick: function onClick() {
+                                                if (_this2.state.counter <= 0) {
+                                                    return;
+                                                }
+                                                _this2.setState({
+                                                    counter: _this2.state.counter - 1
+                                                });
+                                            }
+                                        },
+                                        _react2.default.createElement('i', { className: 'fa fa-minus fa-fw' })
+                                    )
                                 )
                             )
                         )
@@ -24090,4 +24097,4 @@ if(false) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.js.map?0a6842e379255df8cf91
+//# sourceMappingURL=bundle.js.map?8f46108acf5413cd2288

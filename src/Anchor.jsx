@@ -17,7 +17,7 @@ class Anchor extends Component {
             PropTypes.string
         ]),
         componentClass: PropTypes.oneOfType([
-            PropTypes.node,
+            PropTypes.func,
             PropTypes.string
         ])
     };

@@ -25549,10 +25549,6 @@ var _react = __webpack_require__("../node_modules/react/react.js");
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactAddonsShallowCompare = __webpack_require__("../node_modules/react-addons-shallow-compare/index.js");
-
-var _reactAddonsShallowCompare2 = _interopRequireDefault(_reactAddonsShallowCompare);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -25567,8 +25563,8 @@ var isTrivialHref = function isTrivialHref(href) {
     return !href || href.trim() === '#';
 };
 
-var Anchor = (_temp2 = _class = function (_Component) {
-    _inherits(Anchor, _Component);
+var Anchor = (_temp2 = _class = function (_PureComponent) {
+    _inherits(Anchor, _PureComponent);
 
     function Anchor() {
         var _ref;
@@ -25606,11 +25602,6 @@ var Anchor = (_temp2 = _class = function (_Component) {
     }
 
     _createClass(Anchor, [{
-        key: 'shouldComponentUpdate',
-        value: function shouldComponentUpdate(nextProps, nextState) {
-            return (0, _reactAddonsShallowCompare2.default)(this, nextProps, nextState);
-        }
-    }, {
         key: 'render',
         value: function render() {
             var _props = this.props,
@@ -25646,7 +25637,7 @@ var Anchor = (_temp2 = _class = function (_Component) {
     }]);
 
     return Anchor;
-}(_react.Component), _class.propTypes = {
+}(_react.PureComponent), _class.propTypes = {
     href: _propTypes2.default.string,
     style: _propTypes2.default.object,
     onClick: _propTypes2.default.func,
@@ -26088,4 +26079,4 @@ if(false) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.js.map?ee1e5b0cdf1d383dcd11
+//# sourceMappingURL=bundle.js.map?922555e06a8da6ee8ce1

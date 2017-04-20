@@ -1,12 +1,11 @@
 import PropTypes from 'prop-types';
-import React, { Component } from 'react';
-import shallowCompare from 'react-addons-shallow-compare';
+import React, { PureComponent } from 'react';
 
 const isTrivialHref = (href) => {
     return (!href || href.trim() === '#');
 };
 
-class Anchor extends Component {
+class Anchor extends PureComponent {
     static propTypes = {
         href: PropTypes.string,
         style: PropTypes.object,
@@ -42,9 +41,6 @@ class Anchor extends Component {
         }
     };
 
-    shouldComponentUpdate(nextProps, nextState) {
-        return shallowCompare(this, nextProps, nextState);
-    }
     render() {
         let { href, role, tabIndex, componentClass, style, ...props } = this.props;
         const Component = componentClass || 'a';

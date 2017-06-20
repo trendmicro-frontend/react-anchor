@@ -2589,11 +2589,15 @@ exports = module.exports = __webpack_require__("../node_modules/css-loader/lib/c
 
 
 // module
-exports.push([module.i, ".container---kixWP {\n  padding: 20px 20px 0;\n}\n", ""]);
+exports.push([module.i, ".container---kixWP {\n  padding: 20px 20px 0;\n}\n.display-underline---1goYK {\n  text-decoration: underline;\n}\n.remove-underline---1Z2wy:hover,\n.remove-underline---1Z2wy:focus {\n  text-decoration: none;\n}\n", ""]);
 
 // exports
 exports.locals = {
-	"container": "container---kixWP"
+	"container": "container---kixWP",
+	"display-underline": "display-underline---1goYK",
+	"displayUnderline": "display-underline---1goYK",
+	"remove-underline": "remove-underline---1Z2wy",
+	"removeUnderline": "remove-underline---1Z2wy"
 };
 
 /***/ }),
@@ -25638,13 +25642,15 @@ var Anchor = (_temp2 = _class = function (_PureComponent) {
 
     return Anchor;
 }(_react.PureComponent), _class.propTypes = {
-    href: _propTypes2.default.string,
-    style: _propTypes2.default.object,
-    onClick: _propTypes2.default.func,
+    componentClass: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]),
     disabled: _propTypes2.default.bool,
+    href: _propTypes2.default.string,
+    onClick: _propTypes2.default.func,
     role: _propTypes2.default.string,
-    tabIndex: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.string]),
-    componentClass: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string])
+    style: _propTypes2.default.object,
+    tabIndex: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.string])
+}, _class.defaultProps = {
+    componentClass: 'a'
 }, _temp2);
 exports.default = Anchor;
 
@@ -25988,7 +25994,7 @@ var App = function (_React$Component) {
                                 { className: 'col-md-6' },
                                 _react2.default.createElement(
                                     _Section2.default,
-                                    { className: 'row-md-4' },
+                                    { className: 'row-md-3' },
                                     _react2.default.createElement(
                                         'h4',
                                         null,
@@ -26036,6 +26042,41 @@ var App = function (_React$Component) {
                                         _react2.default.createElement('i', { className: 'fa fa-minus fa-fw' })
                                     )
                                 )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'col-md-6' },
+                                _react2.default.createElement(
+                                    _Section2.default,
+                                    { className: 'row-md-3' },
+                                    _react2.default.createElement(
+                                        'h4',
+                                        null,
+                                        'Links'
+                                    ),
+                                    _react2.default.createElement(
+                                        'p',
+                                        null,
+                                        'If you want to change styles, please set class to override default styles.'
+                                    ),
+                                    _react2.default.createElement(
+                                        _src2.default,
+                                        null,
+                                        'This link is default style.'
+                                    ),
+                                    _react2.default.createElement('br', null),
+                                    _react2.default.createElement(
+                                        _src2.default,
+                                        { className: _index2.default.displayUnderline },
+                                        'This link always display underline.'
+                                    ),
+                                    _react2.default.createElement('br', null),
+                                    _react2.default.createElement(
+                                        _src2.default,
+                                        { className: _index2.default.removeUnderline },
+                                        'This link always *not* display underline.'
+                                    )
+                                )
                             )
                         )
                     )
@@ -26079,4 +26120,4 @@ if(false) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.js.map?922555e06a8da6ee8ce1
+//# sourceMappingURL=bundle.js.map?3b5094bd3406a79b98e7

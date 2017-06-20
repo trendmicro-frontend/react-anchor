@@ -1,0 +1,23 @@
+a.default {
+    color: #0096cc;
+    text-decoration: none;
+
+    &:hover, &:focus {
+        color: #db3d44;
+        text-decoration: underline;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+a.default.display-underline {
+    text-decoration: underline;
+}
+
+a.default.remove-underline {
+    &:hover, &:focus {
+        text-decoration: none;
+    }
+}

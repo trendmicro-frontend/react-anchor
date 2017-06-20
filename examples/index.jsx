@@ -23,7 +23,7 @@ class App extends React.Component {
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col-md-6">
-                                <Section className="row-md-4">
+                                <Section className="row-md-2">
                                     <h4>Counter: {this.state.counter}</h4>
                                     <Anchor
                                         componentClass="button"
@@ -61,6 +61,16 @@ class App extends React.Component {
                                     >
                                         <i className="fa fa-minus fa-fw" />
                                     </Anchor>
+                                </Section>
+                            </div>
+                            <div className="col-md-6">
+                                <Section className="row-md-2">
+                                    <h4>Links</h4>
+                                    <Anchor>This link is default style.</Anchor>
+                                    <br />
+                                    <Anchor underline="always">This link always display underline.</Anchor>
+                                    <br />
+                                    <Anchor underline="none">This link always *not* display underline.</Anchor>
                                 </Section>
                             </div>
                         </div>

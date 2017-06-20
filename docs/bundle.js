@@ -24447,24 +24447,24 @@ var App = function (_React$Component) {
                                     _react2.default.createElement(
                                         'p',
                                         null,
-                                        'You can use className or style attribute to override link style.'
+                                        'You can use className or style attributes to override link style.'
                                     ),
                                     _react2.default.createElement(
                                         _src2.default,
                                         null,
-                                        'This link is the default style.'
+                                        'This link uses the default style.'
                                     ),
                                     _react2.default.createElement('br', null),
                                     _react2.default.createElement(
                                         _src2.default,
                                         { className: _index2.default.displayUnderline },
-                                        'Show underline text decoration for the link.'
+                                        'This link is underlined.'
                                     ),
                                     _react2.default.createElement('br', null),
                                     _react2.default.createElement(
                                         _src2.default,
                                         { className: _index2.default.removeUnderline },
-                                        'Remove underline text decoration for the link.'
+                                        'This link is not underlined.'
                                     )
                                 )
                             )
@@ -24515,4 +24515,4 @@ if(false) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.js.map?ff0f73d7ec1dbe78fb2e
+//# sourceMappingURL=bundle.js.map?4c1bf64c3ef4e12a26a3

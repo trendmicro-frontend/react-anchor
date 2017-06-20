@@ -66,17 +66,17 @@ class App extends React.Component {
                             <div className="col-md-6">
                                 <Section className="row-md-3">
                                     <h4>Links</h4>
-                                    <p>You can use className or style attribute to override link style.</p>
+                                    <p>You can use className or style attributes to override link style.</p>
                                     <Anchor>
-                                        This link is the default style.
+                                        This link uses the default style.
                                     </Anchor>
                                     <br />
                                     <Anchor className={styles.displayUnderline}>
-                                        Show underline text decoration for the link.
+                                        This link is underlined.
                                     </Anchor>
                                     <br />
                                     <Anchor className={styles.removeUnderline}>
-                                        Remove underline text decoration for the link.
+                                        This link is not underlined.
                                     </Anchor>
                                 </Section>
                             </div>

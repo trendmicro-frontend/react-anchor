@@ -3,11 +3,17 @@
 }
 
 .display-underline {
-    text-decoration: underline;
+    &,
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
 }
 
 .remove-underline {
-    &:hover, &:focus {
+    &,
+    &:hover,
+    &:focus {
         text-decoration: none;
     }
 }

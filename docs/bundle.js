@@ -1540,7 +1540,7 @@ exports = module.exports = __webpack_require__("../node_modules/css-loader/lib/c
 
 
 // module
-exports.push([module.i, ".container---kixWP {\n  padding: 20px 20px 0;\n}\n.display-underline---1goYK {\n  text-decoration: underline;\n}\n.remove-underline---1Z2wy:hover,\n.remove-underline---1Z2wy:focus {\n  text-decoration: none;\n}\n", ""]);
+exports.push([module.i, ".container---kixWP {\n  padding: 20px 20px 0;\n}\n.display-underline---1goYK,\n.display-underline---1goYK:hover,\n.display-underline---1goYK:focus {\n  text-decoration: underline;\n}\n.remove-underline---1Z2wy,\n.remove-underline---1Z2wy:hover,\n.remove-underline---1Z2wy:focus {\n  text-decoration: none;\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -24447,24 +24447,24 @@ var App = function (_React$Component) {
                                     _react2.default.createElement(
                                         'p',
                                         null,
-                                        'If you want to change styles, please set class to override default styles.'
+                                        'You can use className or style attribute to override link style.'
                                     ),
                                     _react2.default.createElement(
                                         _src2.default,
                                         null,
-                                        'This link is default style.'
+                                        'This link is the default style.'
                                     ),
                                     _react2.default.createElement('br', null),
                                     _react2.default.createElement(
                                         _src2.default,
                                         { className: _index2.default.displayUnderline },
-                                        'This link always display underline.'
+                                        'Show underline text decoration for the link.'
                                     ),
                                     _react2.default.createElement('br', null),
                                     _react2.default.createElement(
                                         _src2.default,
                                         { className: _index2.default.removeUnderline },
-                                        'This link always *not* display underline.'
+                                        'Remove underline text decoration for the link.'
                                     )
                                 )
                             )
@@ -24515,4 +24515,4 @@ if(false) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.js.map?0d42f211ae896b36e109
+//# sourceMappingURL=bundle.js.map?ff0f73d7ec1dbe78fb2e

@@ -23,7 +23,7 @@ class App extends React.Component {
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col-md-6">
-                                <Section className="row-md-2">
+                                <Section className="row-md-3">
                                     <h4>Counter: {this.state.counter}</h4>
                                     <Anchor
                                         componentClass="button"
@@ -64,13 +64,20 @@ class App extends React.Component {
                                 </Section>
                             </div>
                             <div className="col-md-6">
-                                <Section className="row-md-2">
+                                <Section className="row-md-3">
                                     <h4>Links</h4>
-                                    <Anchor>This link is default style.</Anchor>
+                                    <p>If you want to change styles, please set class to override default styles.</p>
+                                    <Anchor>
+                                        This link is default style.
+                                    </Anchor>
                                     <br />
-                                    <Anchor underline="always">This link always display underline.</Anchor>
+                                    <Anchor className={styles.displayUnderline}>
+                                        This link always display underline.
+                                    </Anchor>
                                     <br />
-                                    <Anchor underline="none">This link always *not* display underline.</Anchor>
+                                    <Anchor className={styles.removeUnderline}>
+                                        This link always *not* display underline.
+                                    </Anchor>
                                 </Section>
                             </div>
                         </div>

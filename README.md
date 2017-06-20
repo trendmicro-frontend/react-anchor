@@ -82,16 +82,6 @@ Demo: https://trendmicro-frontend.github.io/react-anchor
       <td>'a'</td>
       <td></td>
     </tr>
-    <tr>
-      <td>underline</td>
-      <td>String: 'always', 'none', or 'normal'</td>
-      <td>'normal'</td>
-      <td>
-        'always': Always display underline.
-        'none': Always not display underline.
-        'normal': Default hide underline, and show it when mouse hovered or focused.
-      </td>
-    </tr>
   </tbody>
 </table>
 

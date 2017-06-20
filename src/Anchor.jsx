@@ -1,7 +1,5 @@
-import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
-import styles from './index.styl';
 
 const isTrivialHref = (href) => {
     return (!href || href.trim() === '#');
@@ -21,16 +19,10 @@ class Anchor extends PureComponent {
         tabIndex: PropTypes.oneOfType([
             PropTypes.number,
             PropTypes.string
-        ]),
-        underline: PropTypes.oneOf([
-            'always',   // Always display underline
-            'none',     // Always not display underline
-            'normal'    // Default hide underline, and show it when mouse hovered or focused.
         ])
     };
 
     static defaultProps = {
-        underline: 'normal',
         componentClass: 'a'
     };
 
@@ -55,13 +47,11 @@ class Anchor extends PureComponent {
 
     render() {
         let {
-            className,
             href,
             role,
             tabIndex,
             componentClass,
             style,
-            underline,
             ...props
         } = this.props;
         const Component = componentClass || 'a';
@@ -82,12 +72,6 @@ class Anchor extends PureComponent {
         return (
             <Component
                 {...props}
-                className={classNames(
-                    className,
-                    styles.default,
-                    { [styles.displayUnderline]: underline === 'always' },
-                    { [styles.removeUnderline]: underline === 'none' }
-                )}
                 role={role}
                 href={href}
                 style={style}
